@@ -1,0 +1,41 @@
+.Header {
+  background-color: #000029;
+  height: 100px;
+  width: 100vw;
+  position: absolute;
+}
+
+.header-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 75px;
+  width: auto;
+}
+
+.header-logo img {
+  height: 75px;
+  width: auto;
+}
+
+.header-navigation {
+}
+
+.nav-container {
+  display: flex;
+  padding: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
