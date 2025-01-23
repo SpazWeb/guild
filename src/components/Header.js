@@ -66,27 +66,29 @@ function Header() {
             </ul>
           </nav>
         </div>
-        <div className="signin-signup">
-          {isAuthenticated ? (
-            <div className="logout">
-              <Link to="/" onClick={handleLogout}>
-                <h3>Logout</h3>
-              </Link>
-            </div>
-          ) : (
-            <>
-              <div className="signin">
-                <Link to="/">
-                  <h3>Sign In</h3>
+        <div class="header-auth">
+          <div className="auth-container">
+            {isAuthenticated ? (
+              <div className="logout">
+                <Link to="/" onClick={handleLogout}>
+                  <h3>Logout</h3>
                 </Link>
               </div>
-              <div className="signout">
-                <Link to="/">
-                  <h3>Sign Out</h3>
-                </Link>
-              </div>
-            </>
-          )}
+            ) : (
+              <>
+                <div className="signin">
+                  <Link to="/">
+                    <h3>Sign-In</h3>
+                  </Link>
+                </div>
+                <div className="signup">
+                  <Link to="/">
+                    <h3>Sign-Up</h3>
+                  </Link>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>
